@@ -70,6 +70,14 @@
 - `articles/*.txt`：为同学们提供的一些文章文本文件，供同学们使用。
 - `README.pdf`：项目说明文件。
 
+同学们可以通过访问github，`git clone`或者在教学网上下载压缩包的方式获取这些文件。
+
+[github下载链接点此处](https://github.com/Syunjyan/Online-Article-Reader-Base.git)
+
+```bash
+git clone https://github.com/Syunjyan/Online-Article-Reader-Base.git
+```
+
 ## 提交文件
 
 请将以下文件打包为一个压缩包，命名为`学号_姓名.zip`，其中`学号`为你的学号，`姓名`为你的姓名。请将以下文件放入压缩包中：
