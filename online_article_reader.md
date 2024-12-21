@@ -39,7 +39,7 @@
 
 ## 已修正问题
 
-- 2024.12.21：修正了Part1中的`send_str`函数，使其能够正确发送报头（即encode序列长度）。
+- 2024.12.21：修正了Part1中的`send_str`和`recv_str`函数，使其能够正确发送报头（即encode序列长度）与接收（加上了decode）。
 
 ## 项目概述
 
@@ -266,7 +266,7 @@ def recv_str(sock):
     length = int.from_bytes(header, 'big')
     # 接收数据
     data = recv_long_data(sock, length)
-    return data
+    return data.decode()
 ```
 
 当然，你也可以定义更复杂的报头格式，例如在报头中加入数据类型、数据校验等信息。若你实现了这些完整的报头功能，可以在报告中说明，我们会给予一定的加分。
